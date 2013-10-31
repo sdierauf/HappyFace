@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Happy View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="HappyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3x0-4O-ntf"/>
+                        <viewControllerLayoutGuide type="bottom" id="odd-QG-dkX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVJ-2U-dCC" customClass="FaceView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LVJ-2U-dCC" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="Mxx-nM-u4L"/>
+                            <constraint firstItem="LVJ-2U-dCC" firstAttribute="top" secondItem="3" secondAttribute="top" id="d2F-Ob-dPS"/>
+                            <constraint firstItem="LVJ-2U-dCC" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="qsz-3f-Lk1"/>
+                            <constraint firstItem="LVJ-2U-dCC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="va3-7R-L4M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceView" destination="LVJ-2U-dCC" id="8lN-WM-4pd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
